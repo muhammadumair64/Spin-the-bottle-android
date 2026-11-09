@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Spinzy" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/midnight</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- System splash (Android 12+ style on every version via core-splashscreen) -->
+    <style name="Theme.Spinzy.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/midnight</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="windowSplashScreenAnimationDuration">400</item>
+        <item name="postSplashScreenTheme">@style/Theme.Spinzy</item>
+    </style>
+</resources>
